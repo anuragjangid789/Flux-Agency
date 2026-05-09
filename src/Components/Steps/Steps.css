@@ -1,0 +1,139 @@
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    gap: 60px;
+    background-color: #fff5e6;
+    height: 90vh;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.left-side img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.right-side {
+    flex: 1;
+    text-align: left;
+}
+
+.single-step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.right-side h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.right-side span {
+    font-size: 40 px;
+    color: #d86527;
+}
+
+.right-side p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.step-no {
+    font-size: 32px;
+    font-weight: 800;
+    color: #d86527;
+    background-color: #ffe5c8;
+    border-radius: 15px;
+    width: 45px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-text {
+    font-size: 17px;
+    color: #d86527;
+    font-weight: 600;
+}
+
+.step-text p {
+    font-size: 15px;
+}
+
+.steps-btn {
+    background-color: #ffe5c8;
+    color: #d86527;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+
+}
+
+.steps-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .steps {
+        height: auto;
+        padding: 60px 20px;
+        display: block;
+    }
+    .steps-container {
+        flex-direction: column;
+        padding: 35px;
+        height: auto;
+    }
+    .left-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side img {
+        width: 80%;
+        max-width: 400px;
+    }
+    .steps-top h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .steps-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 0;
+    }
+    .steps-btn{
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+    }
+
+    .step-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .step-number {
+        
+        margin: 0 auto 15px;
+    }
+}
